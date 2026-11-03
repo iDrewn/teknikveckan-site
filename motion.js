@@ -73,7 +73,7 @@
       yy = (1 - e) * H * 0.6; sc = lerp(0.78, 1, e); rx = (1 - e) * 22; ry = lerp(0, -9, smooth((p - 0.5) / 0.5));
     } else if (k === 'fan') {
       e = smooth(p / 0.6); var o = d.i - (d.n - 1) / 2, narrow = W < 820;
-      x = o * lerp(0, narrow ? W * 0.3 : Math.min(W * 0.26, 330), e); r = o * lerp(0, 7, e);
+      x = o * lerp(0, narrow ? W * 0.86 / Math.max(3, d.n) : Math.min(W * 0.8 / Math.max(3, d.n), 330), e); r = o * lerp(0, 7, e);
       yy = (1 - e) * H * 0.7 + Math.abs(o) * lerp(0, 26, e); sc = lerp(0.8, o === 0 ? 1.04 : 0.9, e); ry = o * lerp(0, -8, e);
     } else if (k === 'sway') {
       e = smooth(p / 0.1); var x2 = smooth((p - 0.9) / 0.1);
