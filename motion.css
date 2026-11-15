@@ -165,3 +165,6 @@ footer p { margin: 0 0 8px; max-width: 900px; } footer a { color: #a1a1a6; }
 :is(html:not(.js), html.reduced) .numbers .sentence { position: static; margin-top: 30px; }
 :is(html:not(.js), html.reduced) .track { flex-wrap: wrap; }
 :is(html:not(.js), html.reduced) .hstage .pin { display: block; }
+
+/* The hero visuals sit on top of the hero copy; let clicks fall through to the buttons */
+.fan, .hero-tag { pointer-events: none; }
